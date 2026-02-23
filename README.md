@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,94 +11,134 @@
 <style>
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0f172a;
-    color: #e2e8f0;
-    line-height: 1.6;
+
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #0f172a;
+color: #e2e8f0;
+line-height: 1.6;
+
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
+
+max-width: 1000px;
+margin: auto;
+padding: 40px;
+
 }
 
 h1, h2, h3 {
-    color: #38bdf8;
+
+color: #38bdf8;
+
 }
 
 h1 {
-    font-size: 42px;
+
+font-size: 42px;
+
 }
 
 h2 {
-    margin-top: 40px;
-    border-bottom: 2px solid #38bdf8;
-    padding-bottom: 5px;
+
+margin-top: 40px;
+border-bottom: 2px solid #38bdf8;
+padding-bottom: 5px;
+
 }
 
 .card {
-    background-color: #1e293b;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+
+background-color: #1e293b;
+padding: 25px;
+margin-top: 20px;
+border-radius: 10px;
+
 }
 
 .tech {
-    display: inline-block;
-    background: #38bdf8;
-    color: black;
-    padding: 6px 12px;
-    margin: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-}
 
-ul {
-    padding-left: 20px;
+display: inline-block;
+background: #38bdf8;
+color: black;
+padding: 8px 14px;
+margin: 6px;
+border-radius: 6px;
+font-weight: bold;
+
 }
 
 .highlight {
-    color: #22c55e;
-    font-weight: bold;
+
+color: #22c55e;
+font-weight: bold;
+
 }
 
-.footer {
-    margin-top: 50px;
-    text-align: center;
-    color: gray;
+ul {
+
+padding-left: 20px;
+
+}
+
+pre {
+
+background-color: #020617;
+padding: 20px;
+border-radius: 8px;
+overflow-x: auto;
+
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
+
+display: inline-block;
+padding: 12px 22px;
+background-color: #38bdf8;
+color: black;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+margin-top: 15px;
+
 }
 
 .button:hover {
-    background-color: #0ea5e9;
+
+background-color: #0ea5e9;
+
+}
+
+.footer {
+
+margin-top: 60px;
+text-align: center;
+color: gray;
+
 }
 
 </style>
 
 </head>
 
+
 <body>
 
+
 <div class="container">
+
 
 <h1>🎵 Multimodal Music Genre Classification</h1>
 
 <p>
-IEEE Conference Project | Deep Learning | Signal Processing | Computer Vision
+
+IEEE Conference Project | Deep Learning | Signal Processing | Computer Vision | Multimodal AI
+
 </p>
+
+
 
 <div class="card">
 
@@ -104,7 +146,7 @@ IEEE Conference Project | Deep Learning | Signal Processing | Computer Vision
 
 <p>
 
-Built an end-to-end multimodal deep learning system capable of classifying music genres using audio signals and spectrogram images.
+Developed an end-to-end deep learning system capable of automatically classifying music genres using multimodal data including audio signals and spectrogram images.
 
 </p>
 
@@ -116,11 +158,13 @@ Built an end-to-end multimodal deep learning system capable of classifying music
 
 <li>Multimodal Deep Learning Architecture</li>
 
-<li>End-to-End ML Pipeline</li>
+<li>Production-ready ML pipeline design</li>
 
 </ul>
 
 </div>
+
+
 
 <div class="card">
 
@@ -128,20 +172,31 @@ Built an end-to-end multimodal deep learning system capable of classifying music
 
 <p>
 
-Music genre classification is challenging due to:
+Music genre classification is challenging due to the complex nature of music signals, which include:
 
 </p>
 
 <ul>
 
-<li>Complex audio patterns</li>
+<li>Time-frequency patterns</li>
+
 <li>Temporal dependencies</li>
-<li>Frequency-time relationships</li>
-<li>Multimodal characteristics</li>
+
+<li>Pitch and rhythm variations</li>
+
+<li>Multimodal representations</li>
 
 </ul>
 
+<p>
+
+This project builds an AI system capable of learning meaningful representations directly from raw audio and image-based spectrograms.
+
+</p>
+
 </div>
+
+
 
 <div class="card">
 
@@ -149,136 +204,269 @@ Music genre classification is challenging due to:
 
 <pre>
 
-Audio Input
-   ↓
+Audio Input (.wav)
+       ↓
 Feature Extraction
-(MFCC, Spectrogram)
-   ↓
-CNN + LSTM Model
-   ↓
+(MFCC, Spectrogram, STFT)
+       ↓
+Deep Learning Models
+ ├── CNN (Spectrogram Images)
+ ├── LSTM (Audio Features)
+       ↓
+Feature Fusion
+       ↓
 Genre Prediction
 
 </pre>
 
 </div>
 
+
+
 <div class="card">
 
 <h2>🔬 AI / ML Implementation</h2>
+
 
 <h3>Signal Processing</h3>
 
 <ul>
 
 <li>MFCC Feature Extraction</li>
+
 <li>Short Time Fourier Transform</li>
+
 <li>Spectrogram Generation</li>
 
+<li>Feature Engineering</li>
+
 </ul>
+
 
 <h3>Deep Learning</h3>
 
 <ul>
 
-<li>Convolutional Neural Networks</li>
-<li>Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks (CNN)</li>
+
+<li>Recurrent Neural Networks (RNN)</li>
+
 <li>LSTM Networks</li>
+
 <li>Transfer Learning</li>
 
 </ul>
 
+
+<h3>Machine Learning Pipeline</h3>
+
+<ul>
+
+<li>Data preprocessing</li>
+
+<li>Feature extraction</li>
+
+<li>Model training</li>
+
+<li>Evaluation</li>
+
+<li>Prediction</li>
+
+</ul>
+
+
 </div>
+
+
 
 <div class="card">
 
 <h2>🧰 Tech Stack</h2>
 
+
 <div class="tech">Python</div>
+
 <div class="tech">TensorFlow</div>
+
 <div class="tech">Keras</div>
+
 <div class="tech">Librosa</div>
+
 <div class="tech">OpenCV</div>
+
 <div class="tech">NumPy</div>
+
 <div class="tech">Pandas</div>
+
 <div class="tech">Scikit-learn</div>
 
+<div class="tech">Matplotlib</div>
+
+
 </div>
+
+
+
 
 <div class="card">
 
 <h2>📊 Results</h2>
 
+
 <ul>
 
 <li><b>Accuracy:</b> 85%</li>
-<li><b>Model:</b> CNN + LSTM</li>
-<li><b>Dataset:</b> GTZAN</li>
+
+<li><b>Architecture:</b> CNN + LSTM</li>
+
+<li><b>Dataset:</b> GTZAN Dataset</li>
+
+<li><b>Training:</b> Supervised Deep Learning</li>
 
 </ul>
 
+
 </div>
+
+
+
 
 <div class="card">
 
 <h2>💡 Skills Demonstrated</h2>
 
+
 <ul>
 
 <li>Deep Learning</li>
+
 <li>Signal Processing</li>
+
 <li>Multimodal AI</li>
+
 <li>Computer Vision</li>
+
+<li>Machine Learning</li>
+
 <li>Feature Engineering</li>
-<li>Model Training & Optimization</li>
+
+<li>Model Optimization</li>
+
+<li>End-to-End Pipeline Development</li>
 
 </ul>
 
+
 </div>
+
+
+
 
 <div class="card">
 
-<h2>🎯 Applications</h2>
+<h2>🎯 Real-World Applications</h2>
+
 
 <ul>
 
 <li>Spotify Recommendation Systems</li>
+
 <li>Music Streaming Platforms</li>
-<li>AI Media Tagging</li>
+
 <li>Content Recommendation Engines</li>
+
+<li>AI Media Classification</li>
+
+<li>Audio Intelligence Systems</li>
 
 </ul>
 
+
 </div>
+
+
+
+
+<div class="card">
+
+<h2>📂 Project Structure</h2>
+
+
+<pre>
+
+music-genre-classification/
+
+│
+
+├── dataset/
+
+├── feature_extraction/
+
+├── models/
+
+├── training/
+
+├── evaluation/
+
+├── utils/
+
+└── README
+
+</pre>
+
+
+</div>
+
+
+
 
 <div class="card">
 
 <h2>👨‍💻 Author</h2>
 
+
 <p>
 
 <b>Shashank Bharadwaj</b>
 
-<br>
+<br><br>
 
-AI Engineer | Machine Learning | Deep Learning
+AI Engineer | Machine Learning | Deep Learning | Multimodal AI
+
+<br><br>
 
 </p>
 
-<a href="#" class="button">View GitHub</a>
+
+<a href="#" class="button">
+
+View GitHub Project
+
+</a>
+
 
 </div>
+
+
+
 
 <div class="footer">
 
+
 <p>
 
-© 2026 Shashank Bharadwaj | AI Engineer Portfolio
+© 2026 Shashank Bharadwaj
 
 </p>
 
-</div>
 
 </div>
+
+
+
+</div>
+
+
 
 </body>
 
